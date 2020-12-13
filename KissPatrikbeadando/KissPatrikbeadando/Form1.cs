@@ -17,11 +17,13 @@ namespace KissPatrikbeadando
         public Form1()
         {
             InitializeComponent();
+            dgw.DataSource = gyumolcslista;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.InitialDirectory = Application.StartupPath;
             ofd.Filter = "Comma Seperated Values (*.csv)|*.csv";
             ofd.DefaultExt = "csv";
             ofd.AddExtension = true;
@@ -32,6 +34,29 @@ namespace KissPatrikbeadando
                 while (!sr.EndOfStream)
                 {
                     string[] sor = sr.ReadLine().Split(';');
+                    Gyumolcslista gy = new Gyumolcslista();
+                    try
+                    {
+                        gy.Index = Convert.ToInt32(sor[0]);
+                    }
+                    catch { }
+                    gy.Név = sor[1];
+                    try
+                    {
+                        gy.Nettóár = Convert.ToInt32(sor[2]);
+                    }
+                    catch { }
+                    try
+                    {
+                        gy.ÁFA = Convert.ToInt32(sor[3]);
+                    }
+                    catch { }
+                    try
+                    {
+                        gy.Összesen = Convert.ToInt32(sor[4]);
+                    }
+                    catch { }
+                    gyumolcslista.Add(gy);
                 }
 
 
