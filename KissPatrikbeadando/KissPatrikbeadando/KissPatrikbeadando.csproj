@@ -53,19 +53,19 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Gyumolcslista.cs" />
-    <Compile Include="Nyeremenyjatek.cs">
+    <Compile Include="Rendeles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nyeremenyjatek.Designer.cs">
-      <DependentUpon>Nyeremenyjatek.cs</DependentUpon>
+    <Compile Include="Rendeles.Designer.cs">
+      <DependentUpon>Rendeles.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nyeremenyjatek.resx">
-      <DependentUpon>Nyeremenyjatek.cs</DependentUpon>
+    <EmbeddedResource Include="Rendeles.resx">
+      <DependentUpon>Rendeles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

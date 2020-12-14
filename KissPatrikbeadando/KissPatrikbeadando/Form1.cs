@@ -66,8 +66,8 @@ namespace KissPatrikbeadando
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Nyeremenyjatek ny = new Nyeremenyjatek();
-            ny.ShowDialog();
+            Rendeles r = new Rendeles();
+            r.ShowDialog();
         }
     }
 }
