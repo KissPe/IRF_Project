@@ -43,5 +43,6 @@ namespace KissPatrikbeadando
             listBoxMegrendelt.Items.Remove(listBoxMegrendelt.SelectedItem);
 
         }
+
     }
 }

@@ -40,7 +40,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 66);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Gyümölcsök listája";
+            this.button1.Text = "Gyümölcsök aktuális ára(1kg)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -58,7 +58,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 66);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Nyereményjáték";
+            this.button2.Text = "Rendelés";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
