@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace KissPatrikbeadando
 {
-    public partial class Form1 : Form
+    public partial class Kezdolap : Form
     {
         BindingList<Gyumolcslista> gyumolcslista = new BindingList<Gyumolcslista>();
-        public Form1()
+        public Kezdolap()
         {
             InitializeComponent();
             dgw.DataSource = gyumolcslista;
@@ -68,6 +68,13 @@ namespace KissPatrikbeadando
         {
             Rendeles r = new Rendeles();
             r.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Nyeremenyjatek ny = new Nyeremenyjatek();
+            ny.ShowDialog();
+
         }
     }
 }

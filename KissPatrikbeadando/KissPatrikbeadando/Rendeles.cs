@@ -93,18 +93,41 @@ namespace KissPatrikbeadando
             xlSheet.Cells[1, 3] = headers[2];
             xlSheet.Cells[2, 1] = textBox1.Text;
             xlSheet.Cells[2, 2] = textBox2.Text;
-            int i = 6;
+            int i = 0;
             i++;
 
-            for (int j = 6; j < listBoxMegrendelt.Items.Count; j++)
+            for (int j = 0; j < listBoxMegrendelt.Items.Count; j++)
             {
-                xlSheet.Cells[j, 6] = listBoxMegrendelt.Items;
+                xlSheet.Cells[j+2, 3] = listBoxMegrendelt.Items[j].ToString();
 
             }
 
-
+            Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+            headerRange.Font.Bold = true;
+            headerRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+            headerRange.EntireColumn.AutoFit();
+            headerRange.RowHeight = 30;
+            headerRange.Interior.Color = Color.Yellow;
 
 
         }
+        private string GetCell(int x, int y)
+        {
+            string ExcelCoordinate = "";
+            int dividend = y;
+            int modulo;
+
+            while (dividend > 0)
+            {
+                modulo = (dividend - 1) % 26;
+                ExcelCoordinate = Convert.ToChar(65 + modulo).ToString() + ExcelCoordinate;
+                dividend = (int)((dividend - modulo) / 26);
+            }
+            ExcelCoordinate += x.ToString();
+
+            return ExcelCoordinate;
+        }
+
     }
 }
