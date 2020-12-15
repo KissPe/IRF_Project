@@ -62,6 +62,8 @@ namespace KissPatrikbeadando
                 
                 xlSheet = xlWB.ActiveSheet;
 
+                CreateTable();
+
 
 
                 xlApp.Visible = true;
@@ -80,5 +82,29 @@ namespace KissPatrikbeadando
             }
         }
 
+        private void CreateTable()
+        {
+            string[] headers = new string[] {
+            "Megrendelő neve",
+            "Megrendelő címe",
+            "Megrendelt termékek"};
+            xlSheet.Cells[1, 1] = headers[0];
+            xlSheet.Cells[1, 2] = headers[1];
+            xlSheet.Cells[1, 3] = headers[2];
+            xlSheet.Cells[2, 1] = textBox1.Text;
+            xlSheet.Cells[2, 2] = textBox2.Text;
+            int i = 6;
+            i++;
+
+            for (int j = 6; j < listBoxMegrendelt.Items.Count; j++)
+            {
+                xlSheet.Cells[j, 6] = listBoxMegrendelt.Items;
+
+            }
+
+
+
+
+        }
     }
 }
