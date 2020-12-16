@@ -91,6 +91,7 @@
             // 
             // listBoxMegrendelt
             // 
+            this.listBoxMegrendelt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.listBoxMegrendelt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxMegrendelt.FormattingEnabled = true;
             this.listBoxMegrendelt.ItemHeight = 15;
