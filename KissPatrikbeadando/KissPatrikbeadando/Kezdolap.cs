@@ -14,11 +14,15 @@ namespace KissPatrikbeadando
     public partial class Kezdolap : Form
     {
         BindingList<Gyumolcslista> gyumolcslista = new BindingList<Gyumolcslista>();
+       
         public Kezdolap()
         {
             InitializeComponent();
             dgw.DataSource = gyumolcslista;
+
+
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -76,5 +80,7 @@ namespace KissPatrikbeadando
             ny.ShowDialog();
 
         }
+
+
     }
 }

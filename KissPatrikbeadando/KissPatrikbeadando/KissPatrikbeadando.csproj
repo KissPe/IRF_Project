@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Nyeremenyjatek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nyeremenyjatek.Designer.cs">
+      <DependentUpon>Nyeremenyjatek.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kezdolap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,12 +59,6 @@
       <DependentUpon>Kezdolap.cs</DependentUpon>
     </Compile>
     <Compile Include="Gyumolcslista.cs" />
-    <Compile Include="Nyeremenyjatek.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nyeremenyjatek.Designer.cs">
-      <DependentUpon>Nyeremenyjatek.cs</DependentUpon>
-    </Compile>
     <Compile Include="Rendeles.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -69,11 +69,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Kezdolap.resx">
-      <DependentUpon>Kezdolap.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Nyeremenyjatek.resx">
       <DependentUpon>Nyeremenyjatek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kezdolap.resx">
+      <DependentUpon>Kezdolap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rendeles.resx">
       <DependentUpon>Rendeles.cs</DependentUpon>
