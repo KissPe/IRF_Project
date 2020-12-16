@@ -37,9 +37,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(266, 27);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 66);
+            this.button1.Size = new System.Drawing.Size(187, 66);
             this.button1.TabIndex = 0;
             this.button1.Text = "Gyümölcsök aktuális ára(1kg)";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,17 +48,19 @@
             // 
             // dgw
             // 
+            this.dgw.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.dgw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw.Location = new System.Drawing.Point(12, 103);
+            this.dgw.Location = new System.Drawing.Point(93, 266);
             this.dgw.Name = "dgw";
-            this.dgw.Size = new System.Drawing.Size(764, 335);
+            this.dgw.Size = new System.Drawing.Size(543, 266);
             this.dgw.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(304, 12);
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(266, 113);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 66);
+            this.button2.Size = new System.Drawing.Size(187, 66);
             this.button2.TabIndex = 2;
             this.button2.Text = "Rendelés";
             this.button2.UseVisualStyleBackColor = true;
@@ -65,9 +68,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(601, 12);
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(266, 194);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 66);
+            this.button3.Size = new System.Drawing.Size(187, 66);
             this.button3.TabIndex = 3;
             this.button3.Text = "Nyereményjáték";
             this.button3.UseVisualStyleBackColor = true;
@@ -77,7 +81,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 650);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(793, 551);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dgw);

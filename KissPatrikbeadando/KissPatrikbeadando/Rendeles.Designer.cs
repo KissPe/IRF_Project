@@ -69,7 +69,10 @@
             // 
             // listBoxMegrendelheto
             // 
+            this.listBoxMegrendelheto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.listBoxMegrendelheto.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxMegrendelheto.FormattingEnabled = true;
+            this.listBoxMegrendelheto.ItemHeight = 15;
             this.listBoxMegrendelheto.Items.AddRange(new object[] {
             "Alma(1kg)",
             "Áfonya(1kg)",
@@ -83,39 +86,46 @@
             "Szilva(1kg)"});
             this.listBoxMegrendelheto.Location = new System.Drawing.Point(274, 53);
             this.listBoxMegrendelheto.Name = "listBoxMegrendelheto";
-            this.listBoxMegrendelheto.Size = new System.Drawing.Size(133, 251);
+            this.listBoxMegrendelheto.Size = new System.Drawing.Size(133, 244);
             this.listBoxMegrendelheto.TabIndex = 6;
             // 
             // listBoxMegrendelt
             // 
+            this.listBoxMegrendelt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxMegrendelt.FormattingEnabled = true;
+            this.listBoxMegrendelt.ItemHeight = 15;
             this.listBoxMegrendelt.Location = new System.Drawing.Point(575, 53);
             this.listBoxMegrendelt.Name = "listBoxMegrendelt";
-            this.listBoxMegrendelt.Size = new System.Drawing.Size(133, 251);
+            this.listBoxMegrendelt.Size = new System.Drawing.Size(133, 244);
             this.listBoxMegrendelt.TabIndex = 7;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(436, 71);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 63);
             this.button1.TabIndex = 10;
             this.button1.Text = "Hozzáad";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(436, 191);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 63);
             this.button2.TabIndex = 11;
             this.button2.Text = "Töröl";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(18, 347);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 81);
@@ -126,6 +136,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(575, 347);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(133, 81);
@@ -171,6 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
