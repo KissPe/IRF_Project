@@ -51,7 +51,15 @@ namespace KissPatrikbeadando
 
         private void button4_Click(object sender, EventArgs e)
         {
-            try
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Adja hozzá a megrendelő nevét és címét!");
+
+
+            }
+            else
+
+                try
             {
                 
                 xlApp = new Excel.Application();
